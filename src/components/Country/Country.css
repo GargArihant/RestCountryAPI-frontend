@@ -1,0 +1,28 @@
+.single-container {
+    display: flex;
+    flex-direction: row;
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+@media (max-width: 750px) {
+    .single-container {
+        flex-direction: column;
+    }
+    .single-container img {
+        position: absolute;
+        top: 25vh;
+        left: 35vw;
+    }
+    .info {
+        margin: 10vh auto;
+        width: 70vw;
+    }
+    .bottom {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
